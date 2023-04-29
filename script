@@ -1,0 +1,2 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/nitrogenclient"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/keystrokes"))()
