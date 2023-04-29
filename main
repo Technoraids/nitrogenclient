@@ -1,0 +1,1649 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local NitrogenClient = Instance.new("ScreenGui")
+local Holder = Instance.new("Frame")
+local Combat = Instance.new("TextButton")
+local CombatDropdown = Instance.new("Frame")
+local CombatButtons = Instance.new("Frame")
+local killaura = Instance.new("TextButton")
+local velocity = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local autopot = Instance.new("TextButton")
+local reach = Instance.new("TextButton")
+local noclickdelay = Instance.new("TextButton")
+local UIPadding = Instance.new("UIPadding")
+local Sword = Instance.new("ImageLabel")
+local Movement = Instance.new("TextButton")
+local MovementDropdown = Instance.new("Frame")
+local MovementButtons = Instance.new("Frame")
+local speed = Instance.new("TextButton")
+local fly = Instance.new("TextButton")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local sprint = Instance.new("TextButton")
+local scaffold = Instance.new("TextButton")
+local inffly = Instance.new("TextButton")
+local highjump = Instance.new("TextButton")
+local longjump = Instance.new("TextButton")
+local UIPadding_2 = Instance.new("UIPadding")
+local Running = Instance.new("ImageLabel")
+local Visuals = Instance.new("TextButton")
+local VisualsDropdown = Instance.new("Frame")
+local VisualsButtons = Instance.new("Frame")
+local fullbright = Instance.new("TextButton")
+local esp = Instance.new("TextButton")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local chams = Instance.new("TextButton")
+local ambience = Instance.new("TextButton")
+local noshadows = Instance.new("TextButton")
+local night = Instance.new("TextButton")
+local UIPadding_3 = Instance.new("UIPadding")
+local Eye = Instance.new("ImageLabel")
+local Utility = Instance.new("TextButton")
+local UtilityDropdown = Instance.new("Frame")
+local UtilityButtons = Instance.new("Frame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local autoreport = Instance.new("TextButton")
+local nofall = Instance.new("TextButton")
+local carpetbed = Instance.new("TextButton")
+local nonametag = Instance.new("TextButton")
+local nokillfeed = Instance.new("TextButton")
+local ignoreplaceregion = Instance.new("TextButton")
+local stealer = Instance.new("TextButton")
+local UIPadding_4 = Instance.new("UIPadding")
+local Tools = Instance.new("ImageLabel")
+local World = Instance.new("TextButton")
+local WorldDropdown = Instance.new("Frame")
+local WorldButtons = Instance.new("Frame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local antivoid = Instance.new("TextButton")
+local notextures = Instance.new("TextButton")
+local UIPadding_5 = Instance.new("UIPadding")
+local Globe = Instance.new("ImageLabel")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local Scripts = Instance.new("TextButton")
+local WorldDropdown_2 = Instance.new("Frame")
+local WorldButtons_2 = Instance.new("Frame")
+local UIListLayout_7 = Instance.new("UIListLayout")
+local infjump = Instance.new("TextButton")
+local infyield = Instance.new("TextButton")
+local UIPadding_6 = Instance.new("UIPadding")
+local Scroll = Instance.new("ImageLabel")
+
+--Properties:
+
+NitrogenClient.Name = "NitrogenClient"
+NitrogenClient.Parent = game.CoreGui
+NitrogenClient.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Holder.Name = "Holder"
+Holder.Parent = NitrogenClient
+Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holder.BackgroundTransparency = 1.000
+Holder.Position = UDim2.new(0.0469238795, 0, 0.0685785562, 0)
+Holder.Size = UDim2.new(0, 1828, 0, 190)
+
+Combat.Name = "Combat"
+Combat.Parent = Holder
+Combat.Active = false
+Combat.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Combat.BorderSizePixel = 0
+Combat.Position = UDim2.new(0.0453597456, 0, 0.348681211, 0)
+Combat.Selectable = false
+Combat.Size = UDim2.new(0, 220, 0, 40)
+Combat.AutoButtonColor = false
+Combat.Font = Enum.Font.SourceSansBold
+Combat.Text = "combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextSize = 25.000
+Combat.TextXAlignment = Enum.TextXAlignment.Left
+
+CombatDropdown.Name = "CombatDropdown"
+CombatDropdown.Parent = Combat
+CombatDropdown.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+CombatDropdown.BorderSizePixel = 0
+CombatDropdown.Position = UDim2.new(-0.0280373823, 0, 1, 0)
+CombatDropdown.Size = UDim2.new(0, 220, 0, 192)
+
+CombatButtons.Name = "CombatButtons"
+CombatButtons.Parent = CombatDropdown
+CombatButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CombatButtons.BackgroundTransparency = 1.000
+CombatButtons.Position = UDim2.new(0.0300000273, 0, 0.0434518419, 0)
+CombatButtons.Size = UDim2.new(0, 207, 0, 115)
+
+killaura.Name = "killaura"
+killaura.Parent = CombatButtons
+killaura.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+killaura.BorderSizePixel = 0
+killaura.Position = UDim2.new(-0.0386473425, 0, -0.0235294122, 0)
+killaura.Size = UDim2.new(0, 205, 0, 35)
+killaura.Font = Enum.Font.SourceSansBold
+killaura.Text = "killaura"
+killaura.TextColor3 = Color3.fromRGB(255, 255, 255)
+killaura.TextSize = 20.000
+
+velocity.Name = "velocity"
+velocity.Parent = CombatButtons
+velocity.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+velocity.BorderSizePixel = 0
+velocity.Size = UDim2.new(0, 205, 0, 35)
+velocity.Font = Enum.Font.SourceSansBold
+velocity.Text = "velocity"
+velocity.TextColor3 = Color3.fromRGB(255, 255, 255)
+velocity.TextSize = 20.000
+
+UIListLayout.Parent = CombatButtons
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+autopot.Name = "autopot"
+autopot.Parent = CombatButtons
+autopot.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+autopot.BorderSizePixel = 0
+autopot.Size = UDim2.new(0, 205, 0, 35)
+autopot.Font = Enum.Font.SourceSansBold
+autopot.Text = "autopot"
+autopot.TextColor3 = Color3.fromRGB(255, 255, 255)
+autopot.TextSize = 20.000
+
+reach.Name = "reach"
+reach.Parent = CombatButtons
+reach.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+reach.BorderSizePixel = 0
+reach.Size = UDim2.new(0, 205, 0, 35)
+reach.Font = Enum.Font.SourceSansBold
+reach.Text = "reach"
+reach.TextColor3 = Color3.fromRGB(255, 255, 255)
+reach.TextSize = 20.000
+
+noclickdelay.Name = "noclickdelay"
+noclickdelay.Parent = CombatButtons
+noclickdelay.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+noclickdelay.BorderSizePixel = 0
+noclickdelay.Size = UDim2.new(0, 205, 0, 35)
+noclickdelay.Font = Enum.Font.SourceSansBold
+noclickdelay.Text = "noclickdelay"
+noclickdelay.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclickdelay.TextSize = 20.000
+
+UIPadding.Parent = Combat
+UIPadding.PaddingLeft = UDim.new(0, 6)
+
+Sword.Name = "Sword"
+Sword.Parent = Combat
+Sword.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sword.BackgroundTransparency = 1.000
+Sword.Position = UDim2.new(0.829999983, 0, 0.100000001, 0)
+Sword.Size = UDim2.new(0, 32, 0, 32)
+Sword.Image = "rbxassetid://13289948916"
+
+Movement.Name = "Movement"
+Movement.Parent = Holder
+Movement.Active = false
+Movement.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Movement.BorderSizePixel = 0
+Movement.Position = UDim2.new(0.0453597456, 0, 0.348681211, 0)
+Movement.Selectable = false
+Movement.Size = UDim2.new(0, 220, 0, 40)
+Movement.AutoButtonColor = false
+Movement.Font = Enum.Font.SourceSansBold
+Movement.Text = "movement"
+Movement.TextColor3 = Color3.fromRGB(255, 255, 255)
+Movement.TextSize = 25.000
+Movement.TextXAlignment = Enum.TextXAlignment.Left
+
+MovementDropdown.Name = "MovementDropdown"
+MovementDropdown.Parent = Movement
+MovementDropdown.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+MovementDropdown.BorderSizePixel = 0
+MovementDropdown.Position = UDim2.new(-0.0280373823, 0, 1, 0)
+MovementDropdown.Size = UDim2.new(0, 220, 0, 260)
+
+MovementButtons.Name = "MovementButtons"
+MovementButtons.Parent = MovementDropdown
+MovementButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MovementButtons.BackgroundTransparency = 1.000
+MovementButtons.Position = UDim2.new(0.0300000273, 0, 0.0279849712, 0)
+MovementButtons.Size = UDim2.new(0, 207, 0, 121)
+
+speed.Name = "speed"
+speed.Parent = MovementButtons
+speed.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+speed.BorderSizePixel = 0
+speed.Position = UDim2.new(-0.0386473425, 0, -0.0235294122, 0)
+speed.Size = UDim2.new(0, 205, 0, 35)
+speed.Font = Enum.Font.SourceSansBold
+speed.Text = "speed"
+speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed.TextSize = 20.000
+
+fly.Name = "fly"
+fly.Parent = MovementButtons
+fly.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+fly.BorderSizePixel = 0
+fly.Size = UDim2.new(0, 205, 0, 35)
+fly.Font = Enum.Font.SourceSansBold
+fly.Text = "fly"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextSize = 20.000
+
+UIListLayout_2.Parent = MovementButtons
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+sprint.Name = "sprint"
+sprint.Parent = MovementButtons
+sprint.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+sprint.BorderSizePixel = 0
+sprint.Size = UDim2.new(0, 205, 0, 35)
+sprint.Font = Enum.Font.SourceSansBold
+sprint.Text = "sprint"
+sprint.TextColor3 = Color3.fromRGB(255, 255, 255)
+sprint.TextSize = 20.000
+
+scaffold.Name = "scaffold"
+scaffold.Parent = MovementButtons
+scaffold.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+scaffold.BorderSizePixel = 0
+scaffold.Size = UDim2.new(0, 205, 0, 35)
+scaffold.Font = Enum.Font.SourceSansBold
+scaffold.Text = "scaffold"
+scaffold.TextColor3 = Color3.fromRGB(255, 255, 255)
+scaffold.TextSize = 20.000
+
+inffly.Name = "inffly"
+inffly.Parent = MovementButtons
+inffly.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+inffly.BorderSizePixel = 0
+inffly.Position = UDim2.new(-0.0386473425, 0, -0.0330578499, 0)
+inffly.Size = UDim2.new(0, 205, 0, 35)
+inffly.Font = Enum.Font.SourceSansBold
+inffly.Text = "inffly"
+inffly.TextColor3 = Color3.fromRGB(255, 255, 255)
+inffly.TextSize = 20.000
+
+highjump.Name = "highjump"
+highjump.Parent = MovementButtons
+highjump.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+highjump.BorderSizePixel = 0
+highjump.Size = UDim2.new(0, 205, 0, 35)
+highjump.Font = Enum.Font.SourceSansBold
+highjump.Text = "highjump"
+highjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+highjump.TextSize = 20.000
+
+longjump.Name = "longjump"
+longjump.Parent = MovementButtons
+longjump.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+longjump.BorderSizePixel = 0
+longjump.Position = UDim2.new(0, 0, 0.0991735533, 0)
+longjump.Size = UDim2.new(0, 205, 0, 35)
+longjump.Font = Enum.Font.SourceSansBold
+longjump.Text = "longjump"
+longjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+longjump.TextSize = 20.000
+
+UIPadding_2.Parent = Movement
+UIPadding_2.PaddingLeft = UDim.new(0, 6)
+
+Running.Name = "Running"
+Running.Parent = Movement
+Running.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Running.BackgroundTransparency = 1.000
+Running.Position = UDim2.new(0.829999983, 0, 0.100000001, 0)
+Running.Size = UDim2.new(0, 32, 0, 32)
+Running.Image = "rbxassetid://13289967690"
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Holder
+Visuals.Active = false
+Visuals.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Visuals.BorderSizePixel = 0
+Visuals.Position = UDim2.new(0.0453597456, 0, 0.348681211, 0)
+Visuals.Selectable = false
+Visuals.Size = UDim2.new(0, 220, 0, 40)
+Visuals.AutoButtonColor = false
+Visuals.Font = Enum.Font.SourceSansBold
+Visuals.Text = "visuals"
+Visuals.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.TextSize = 25.000
+Visuals.TextXAlignment = Enum.TextXAlignment.Left
+
+VisualsDropdown.Name = "VisualsDropdown"
+VisualsDropdown.Parent = Visuals
+VisualsDropdown.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+VisualsDropdown.BorderSizePixel = 0
+VisualsDropdown.Position = UDim2.new(-0.029281389, 0, 0.975000024, 0)
+VisualsDropdown.Size = UDim2.new(0, 220, 0, 224)
+
+VisualsButtons.Name = "VisualsButtons"
+VisualsButtons.Parent = VisualsDropdown
+VisualsButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualsButtons.BackgroundTransparency = 1.000
+VisualsButtons.Position = UDim2.new(0.030000167, 0, 0.0251383577, 0)
+VisualsButtons.Size = UDim2.new(0, 207, 0, 126)
+
+fullbright.Name = "fullbright"
+fullbright.Parent = VisualsButtons
+fullbright.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+fullbright.BorderSizePixel = 0
+fullbright.Position = UDim2.new(-0.0386473425, 0, -0.0235294122, 0)
+fullbright.Size = UDim2.new(0, 205, 0, 35)
+fullbright.Font = Enum.Font.SourceSansBold
+fullbright.Text = "fullbright"
+fullbright.TextColor3 = Color3.fromRGB(255, 255, 255)
+fullbright.TextSize = 20.000
+
+esp.Name = "esp"
+esp.Parent = VisualsButtons
+esp.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+esp.BorderSizePixel = 0
+esp.Size = UDim2.new(0, 205, 0, 35)
+esp.Font = Enum.Font.SourceSansBold
+esp.Text = "esp"
+esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+esp.TextSize = 20.000
+
+UIListLayout_3.Parent = VisualsButtons
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+chams.Name = "chams"
+chams.Parent = VisualsButtons
+chams.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+chams.BorderSizePixel = 0
+chams.Size = UDim2.new(0, 205, 0, 35)
+chams.Font = Enum.Font.SourceSansBold
+chams.Text = "chams"
+chams.TextColor3 = Color3.fromRGB(255, 255, 255)
+chams.TextSize = 20.000
+
+ambience.Name = "ambience"
+ambience.Parent = VisualsButtons
+ambience.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ambience.BorderSizePixel = 0
+ambience.Size = UDim2.new(0, 205, 0, 35)
+ambience.Font = Enum.Font.SourceSansBold
+ambience.Text = "ambience"
+ambience.TextColor3 = Color3.fromRGB(255, 255, 255)
+ambience.TextSize = 20.000
+
+noshadows.Name = "noshadows"
+noshadows.Parent = VisualsButtons
+noshadows.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+noshadows.BorderSizePixel = 0
+noshadows.Size = UDim2.new(0, 205, 0, 35)
+noshadows.Font = Enum.Font.SourceSansBold
+noshadows.Text = "noglobalshadows"
+noshadows.TextColor3 = Color3.fromRGB(255, 255, 255)
+noshadows.TextSize = 20.000
+
+night.Name = "night"
+night.Parent = VisualsButtons
+night.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+night.BorderSizePixel = 0
+night.Size = UDim2.new(0, 205, 0, 35)
+night.Font = Enum.Font.SourceSansBold
+night.Text = "night"
+night.TextColor3 = Color3.fromRGB(255, 255, 255)
+night.TextSize = 20.000
+
+UIPadding_3.Parent = Visuals
+UIPadding_3.PaddingLeft = UDim.new(0, 6)
+
+Eye.Name = "Eye"
+Eye.Parent = Visuals
+Eye.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Eye.BackgroundTransparency = 1.000
+Eye.Position = UDim2.new(0.829999983, 0, 0.100000001, 0)
+Eye.Size = UDim2.new(0, 32, 0, 32)
+Eye.Image = "rbxassetid://13289993494"
+
+Utility.Name = "Utility"
+Utility.Parent = Holder
+Utility.Active = false
+Utility.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Utility.BorderSizePixel = 0
+Utility.Position = UDim2.new(0.0420774706, 0, 0.322365433, 0)
+Utility.Selectable = false
+Utility.Size = UDim2.new(0, 220, 0, 40)
+Utility.AutoButtonColor = false
+Utility.Font = Enum.Font.SourceSansBold
+Utility.Text = "utility"
+Utility.TextColor3 = Color3.fromRGB(255, 255, 255)
+Utility.TextSize = 25.000
+Utility.TextXAlignment = Enum.TextXAlignment.Left
+
+UtilityDropdown.Name = "UtilityDropdown"
+UtilityDropdown.Parent = Utility
+UtilityDropdown.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+UtilityDropdown.BorderSizePixel = 0
+UtilityDropdown.Position = UDim2.new(-0.0287034977, 0, 1, 0)
+UtilityDropdown.Size = UDim2.new(0, 220, 0, 260)
+
+UtilityButtons.Name = "UtilityButtons"
+UtilityButtons.Parent = UtilityDropdown
+UtilityButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UtilityButtons.BackgroundTransparency = 1.000
+UtilityButtons.Position = UDim2.new(0.0299998894, 0, 0.02634844, 0)
+UtilityButtons.Size = UDim2.new(0, 207, 0, 150)
+
+UIListLayout_4.Parent = UtilityButtons
+UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+autoreport.Name = "autoreport"
+autoreport.Parent = UtilityButtons
+autoreport.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+autoreport.BorderSizePixel = 0
+autoreport.Size = UDim2.new(0, 205, 0, 35)
+autoreport.Font = Enum.Font.SourceSansBold
+autoreport.Text = "autoreport"
+autoreport.TextColor3 = Color3.fromRGB(255, 255, 255)
+autoreport.TextSize = 20.000
+
+nofall.Name = "nofall"
+nofall.Parent = UtilityButtons
+nofall.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+nofall.BorderSizePixel = 0
+nofall.Size = UDim2.new(0, 205, 0, 35)
+nofall.Font = Enum.Font.SourceSansBold
+nofall.Text = "nofall"
+nofall.TextColor3 = Color3.fromRGB(255, 255, 255)
+nofall.TextSize = 20.000
+
+carpetbed.Name = "carpetbed"
+carpetbed.Parent = UtilityButtons
+carpetbed.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+carpetbed.BorderSizePixel = 0
+carpetbed.Size = UDim2.new(0, 205, 0, 35)
+carpetbed.Font = Enum.Font.SourceSansBold
+carpetbed.Text = "carpetbed"
+carpetbed.TextColor3 = Color3.fromRGB(255, 255, 255)
+carpetbed.TextSize = 20.000
+
+nonametag.Name = "nonametag"
+nonametag.Parent = UtilityButtons
+nonametag.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+nonametag.BorderSizePixel = 0
+nonametag.Size = UDim2.new(0, 205, 0, 35)
+nonametag.Font = Enum.Font.SourceSansBold
+nonametag.Text = "nonametag"
+nonametag.TextColor3 = Color3.fromRGB(255, 255, 255)
+nonametag.TextSize = 20.000
+
+nokillfeed.Name = "nokillfeed"
+nokillfeed.Parent = UtilityButtons
+nokillfeed.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+nokillfeed.BorderSizePixel = 0
+nokillfeed.Size = UDim2.new(0, 205, 0, 35)
+nokillfeed.Font = Enum.Font.SourceSansBold
+nokillfeed.Text = "nokillfeed"
+nokillfeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+nokillfeed.TextSize = 20.000
+
+ignoreplaceregion.Name = "ignoreplaceregion"
+ignoreplaceregion.Parent = UtilityButtons
+ignoreplaceregion.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+ignoreplaceregion.BorderSizePixel = 0
+ignoreplaceregion.Size = UDim2.new(0, 205, 0, 35)
+ignoreplaceregion.Font = Enum.Font.SourceSansBold
+ignoreplaceregion.Text = "ignoreplaceregion"
+ignoreplaceregion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ignoreplaceregion.TextSize = 20.000
+
+stealer.Name = "stealer"
+stealer.Parent = UtilityButtons
+stealer.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+stealer.BorderSizePixel = 0
+stealer.Size = UDim2.new(0, 205, 0, 35)
+stealer.Font = Enum.Font.SourceSansBold
+stealer.Text = "stealer"
+stealer.TextColor3 = Color3.fromRGB(255, 255, 255)
+stealer.TextSize = 20.000
+
+UIPadding_4.Parent = Utility
+UIPadding_4.PaddingLeft = UDim.new(0, 6)
+
+Tools.Name = "Tools"
+Tools.Parent = Utility
+Tools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools.BackgroundTransparency = 1.000
+Tools.Position = UDim2.new(0.829999983, 0, 0.100000001, 0)
+Tools.Size = UDim2.new(0, 32, 0, 32)
+Tools.Image = "rbxassetid://13290004223"
+
+World.Name = "World"
+World.Parent = Holder
+World.Active = false
+World.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+World.BorderSizePixel = 0
+World.Position = UDim2.new(0.0453597456, 0, 0.348681211, 0)
+World.Selectable = false
+World.Size = UDim2.new(0, 220, 0, 40)
+World.AutoButtonColor = false
+World.Font = Enum.Font.SourceSansBold
+World.Text = "world"
+World.TextColor3 = Color3.fromRGB(255, 255, 255)
+World.TextSize = 25.000
+World.TextXAlignment = Enum.TextXAlignment.Left
+
+WorldDropdown.Name = "WorldDropdown"
+WorldDropdown.Parent = World
+WorldDropdown.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+WorldDropdown.BorderSizePixel = 0
+WorldDropdown.Position = UDim2.new(-0.0288020372, 0, 0.975000024, 0)
+WorldDropdown.Size = UDim2.new(0, 220, 0, 83)
+
+WorldButtons.Name = "WorldButtons"
+WorldButtons.Parent = WorldDropdown
+WorldButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WorldButtons.BackgroundTransparency = 1.000
+WorldButtons.Position = UDim2.new(0.0299998894, 0, 0.0647590607, 0)
+WorldButtons.Size = UDim2.new(0, 207, 0, 142)
+
+UIListLayout_5.Parent = WorldButtons
+UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+
+antivoid.Name = "antivoid"
+antivoid.Parent = WorldButtons
+antivoid.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+antivoid.BorderSizePixel = 0
+antivoid.Size = UDim2.new(0, 205, 0, 35)
+antivoid.Font = Enum.Font.SourceSansBold
+antivoid.Text = "antivoid"
+antivoid.TextColor3 = Color3.fromRGB(255, 255, 255)
+antivoid.TextSize = 20.000
+
+notextures.Name = "notextures"
+notextures.Parent = WorldButtons
+notextures.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+notextures.BorderSizePixel = 0
+notextures.Size = UDim2.new(0, 205, 0, 35)
+notextures.Font = Enum.Font.SourceSansBold
+notextures.Text = "notextures"
+notextures.TextColor3 = Color3.fromRGB(255, 255, 255)
+notextures.TextSize = 20.000
+
+UIPadding_5.Parent = World
+UIPadding_5.PaddingLeft = UDim.new(0, 6)
+
+Globe.Name = "Globe"
+Globe.Parent = World
+Globe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Globe.BackgroundTransparency = 1.000
+Globe.Position = UDim2.new(0.829999983, 0, 0.100000001, 0)
+Globe.Size = UDim2.new(0, 32, 0, 32)
+Globe.Image = "rbxassetid://13290011261"
+
+UIListLayout_6.Parent = Holder
+UIListLayout_6.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_6.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_6.Padding = UDim.new(0, 6)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Holder
+Scripts.Active = false
+Scripts.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.0453597456, 0, 0.348681211, 0)
+Scripts.Selectable = false
+Scripts.Size = UDim2.new(0, 220, 0, 40)
+Scripts.AutoButtonColor = false
+Scripts.Font = Enum.Font.SourceSansBold
+Scripts.Text = "scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextSize = 25.000
+Scripts.TextXAlignment = Enum.TextXAlignment.Left
+
+WorldDropdown_2.Name = "WorldDropdown"
+WorldDropdown_2.Parent = Scripts
+WorldDropdown_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+WorldDropdown_2.BorderSizePixel = 0
+WorldDropdown_2.Position = UDim2.new(-0.0288020372, 0, 0.975000024, 0)
+WorldDropdown_2.Size = UDim2.new(0, 220, 0, 83)
+
+WorldButtons_2.Name = "WorldButtons"
+WorldButtons_2.Parent = WorldDropdown_2
+WorldButtons_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WorldButtons_2.BackgroundTransparency = 1.000
+WorldButtons_2.Position = UDim2.new(0.0299998894, 0, 0.0647590607, 0)
+WorldButtons_2.Size = UDim2.new(0, 207, 0, 142)
+
+UIListLayout_7.Parent = WorldButtons_2
+UIListLayout_7.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
+
+infjump.Name = "infjump"
+infjump.Parent = WorldButtons_2
+infjump.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+infjump.BorderSizePixel = 0
+infjump.Size = UDim2.new(0, 205, 0, 35)
+infjump.Font = Enum.Font.SourceSansBold
+infjump.Text = "infjump"
+infjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+infjump.TextSize = 20.000
+
+infyield.Name = "infyield"
+infyield.Parent = WorldButtons_2
+infyield.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+infyield.BorderSizePixel = 0
+infyield.Size = UDim2.new(0, 205, 0, 35)
+infyield.Font = Enum.Font.SourceSansBold
+infyield.Text = "infyield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextSize = 20.000
+
+UIPadding_6.Parent = Scripts
+UIPadding_6.PaddingLeft = UDim.new(0, 6)
+
+Scroll.Name = "Scroll"
+Scroll.Parent = Scripts
+Scroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scroll.BackgroundTransparency = 1.000
+Scroll.Position = UDim2.new(0.829999983, 0, 0.100000001, 0)
+Scroll.Size = UDim2.new(0, 32, 0, 32)
+Scroll.Image = "rbxassetid://13292665977"
+
+-- Scripts:
+
+local function DGBCVFI_fake_script() -- killaura.Toggled 
+	local script = Instance.new('LocalScript', killaura)
+
+	local toggled = false
+	local text = script.Parent.TextColor
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			one.Visible = true
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			one.Visible = false
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(DGBCVFI_fake_script)()
+local function AVSBQCT_fake_script() -- velocity.Toggled 
+	local script = Instance.new('LocalScript', velocity)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(AVSBQCT_fake_script)()
+local function HBNFZE_fake_script() -- velocity.LocalScript 
+	local script = Instance.new('LocalScript', velocity)
+
+	local kb = debug.getupvalue(require(game:GetService("ReplicatedStorage").TS.damage["knockback-util"]).KnockbackUtil.calculateKnockbackVelocity, 1)
+	local btn = script.Parent
+	local toggled = false
+	
+	
+	btn.MouseButton1Down:Connect(function()
+		if toggled == false then
+			kb["kbDirectionStrength"] = 0
+			kb["kbUpwardStrength"] = 0
+			toggled = true
+		else
+			kb["kbDirectionStrength"] = 9999999
+			kb["kbUpwardStrength"] = 9999999
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(HBNFZE_fake_script)()
+local function WWXWE_fake_script() -- autopot.Toggled 
+	local script = Instance.new('LocalScript', autopot)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(WWXWE_fake_script)()
+local function UMBK_fake_script() -- reach.Toggled 
+	local script = Instance.new('LocalScript', reach)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(UMBK_fake_script)()
+local function VHVCOQ_fake_script() -- reach.LocalScript 
+	local script = Instance.new('LocalScript', reach)
+
+	local CombatConstant = require(game:GetService("ReplicatedStorage").TS.combat["combat-constant"]).CombatConstant
+	local reachvalue = {["Value"] = 22}
+	local toggled = false
+	script.Parent.MouseButton1Click:Connect(function(v)
+		if toggled == false then
+			toggled = true
+			getgenv().reachval = v
+			if getgenv().reachval then
+				CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = reachvalue["Value"]
+			else
+				CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = 14.4
+				toggled = false
+			end
+		end
+	end)
+end
+coroutine.wrap(VHVCOQ_fake_script)()
+local function JBNIY_fake_script() -- noclickdelay.Toggled 
+	local script = Instance.new('LocalScript', noclickdelay)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(JBNIY_fake_script)()
+local function QTASLH_fake_script() -- noclickdelay.LocalScript 
+	local script = Instance.new('LocalScript', noclickdelay)
+
+	local toggled = false
+	local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua"))()
+	local SwordCont = require(game:GetService("Players").LocalPlayer.PlayerScripts.TS.controllers.global.combat.sword["sword-controller"]).SwordController
+	local itemtablefunc = require(game:GetService("ReplicatedStorage").TS.item["item-meta"]).getItemMeta
+	local itemtable = debug.getupvalue(itemtablefunc, 1)
+	script.Parent.MouseButton1Click:Connect(function(v)
+			getgenv().a = v
+			spawn(function()
+				if getgenv().a and entity.isAlive then
+					for i2,v2 in pairs(itemtable) do
+						if type(v2) == "table" and rawget(v2, "sword") then
+							v2.sword.attackSpeed = 0.000001
+						end
+						SwordCont.isClickingTooFast = function() return false end
+					end
+				else
+				end
+			end)
+		end)
+end
+coroutine.wrap(QTASLH_fake_script)()
+local function UGJB_fake_script() -- speed.Toggled 
+	local script = Instance.new('LocalScript', speed)
+
+	local toggled = false
+	local text = script.Parent.TextColor
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			one.Visible = true
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			one.Visible = false
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(UGJB_fake_script)()
+local function JIYST_fake_script() -- fly.Toggled 
+	local script = Instance.new('LocalScript', fly)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(JIYST_fake_script)()
+local function GJMBLL_fake_script() -- fly.LocalScript 
+	local script = Instance.new('LocalScript', fly)
+
+	local lplr = game.Players.LocalPlayer
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			if toggled == false then
+				local flyv = 1.75
+					repeat task.wait()
+						lplr.Character.PrimaryPart.Velocity = Vector3.new(lplr.Character.PrimaryPart.Velocity.X,flyv,lplr.Character.PrimaryPart.Velocity.Z)
+						if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.Space) then
+								lplr.Character.PrimaryPart.Velocity = Vector3.new(lplr.Character.PrimaryPart.Velocity.X,85,lplr.Character.PrimaryPart.Velocity.Z)
+							end
+						if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftShift) then
+								lplr.Character.PrimaryPart.Velocity = Vector3.new(lplr.Character.PrimaryPart.Velocity.X,-85,lplr.Character.PrimaryPart.Velocity.Z)
+							end
+						until not toggled
+					end
+				end)
+end
+coroutine.wrap(GJMBLL_fake_script)()
+local function ECOHFP_fake_script() -- sprint.Toggled 
+	local script = Instance.new('LocalScript', sprint)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(ECOHFP_fake_script)()
+local function KUVRU_fake_script() -- sprint.LocalScript 
+	local script = Instance.new('LocalScript', sprint)
+
+	local knit = debug.getupvalue(require(game.Players.LocalPlayer.PlayerScripts.TS.knit).setup, 6)
+	
+	local sprintcontroller = {
+		SprintController = knit.Controllers["SprintController"],
+	}
+	
+	local enabled = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if enabled == false then
+			enabled = true
+			repeat task.wait()
+				sprintcontroller["SprintController"]:startSprinting()
+			until not enabled
+		else
+			task.wait(0.1)
+			sprintcontroller["SprintController"]:stopSprinting()
+		end
+	end)
+end
+coroutine.wrap(KUVRU_fake_script)()
+local function AWPM_fake_script() -- scaffold.Toggled 
+	local script = Instance.new('LocalScript', scaffold)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(AWPM_fake_script)()
+local function LDIEA_fake_script() -- scaffold.LocalScript 
+	local script = Instance.new('LocalScript', scaffold)
+
+	local toggled = false
+	local lplr = game.Players.LocalPlayer
+	local function getwool()
+		for i5, v5 in pairs(getinv(lplr)["items"]) do
+			if v5["itemType"]:match("wool") or v5["itemType"]:match("grass") then
+				return v5["itemType"], v5["amount"]
+			end
+		end	
+		return nil
+	end
+	local function getItem(itemName)
+		for i5, v5 in pairs(getinv(lplr)["items"]) do
+			if v5["itemType"] == itemName then
+				return v5, i5
+			end
+		end
+		return nil
+	end
+	local InventoryUtil = require(game:GetService("ReplicatedStorage").TS.inventory["inventory-util"]).InventoryUtil
+	function getinv(plr)
+		local plr = plr or lplr
+		local thingy, thingytwo = pcall(function() return InventoryUtil.getInventory(plr) end)
+		return (thingy and thingytwo or {
+			items = {},
+			armor = {},
+			hand = nil
+		})
+	end
+	local BlockController2 = require(game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"]["@easy-games"]["block-engine"].out.client.placement["block-placer"]).BlockPlacer
+	local blockcontroller = require(game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"]["@easy-games"]["block-engine"].out).BlockEngine
+	local BlockEngine = require(lplr.PlayerScripts.TS.lib["block-engine"]["client-block-engine"]).ClientBlockEngine
+	local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua"))()
+	local RunService = game:GetService("RunService")
+	local oldpos = v.Character.HumanoidRootPart.Position
+	local blocktable = BlockController2.new(BlockEngine, getwool())
+	
+	function placeblockthing(newpos, customblock)
+		local placeblocktype = (customblock or getwool())
+		blocktable.blockType = placeblocktype
+		if blockcontroller:isAllowedPlacement(lplr, placeblocktype, Vector3.new(newpos.X / 3, newpos.Y / 3, newpos.Z / 3)) and getItem(placeblocktype) then
+			return blocktable:placeBlock(Vector3.new(newpos.X / 3, newpos.Y / 3, newpos.Z / 3))
+		end
+	end
+	
+	
+	local function getScaffold(vec, diagonaltoggle)
+		local realvec = Vector3.new(math.floor((vec.X / 3) + 0.5) * 3, math.floor((vec.Y / 3) + 0.5) * 3, math.floor((vec.Z / 3) + 0.5) * 3) 
+		local newpos = (oldpos - realvec)
+		local returedpos = realvec
+		if entity.isAlive then
+			local angle = math.deg(math.atan2(-lplr.Character.Humanoid.MoveDirection.X, -lplr.Character.Humanoid.MoveDirection.Z))
+			local goingdiagonal = (angle >= 130 and angle <= 150) or (angle <= -35 and angle >= -50) or (angle >= 35 and angle <= 50) or (angle <= -130 and angle >= -150)
+			if goingdiagonal and ((newpos.X == 0 and newpos.Z ~= 0) or (newpos.X ~= 0 and newpos.Z == 0)) and diagonaltoggle then
+				return oldpos
+			end
+		end
+		return realvec
+	end
+	
+	local yes
+	local yestwo
+	local sussyfunnything
+	local sussything = false
+	local v = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if v == false then
+			local y = v
+			if (y) and entity.isAlive then
+				spawn(function()
+					yestwo = RunService.Heartbeat:Connect(function(step)
+						if (not y) then return end
+						local y = lplr.Character.HumanoidRootPart.Position.y
+						local x = lplr.Character.HumanoidRootPart.Position.x
+						local z = lplr.Character.HumanoidRootPart.Position.z
+						local blockpos = getScaffold((lplr.Character.Head.Position) + Vector3.new(1, -math.floor(lplr.Character.Humanoid.HipHeight * 3), 0) + lplr.Character.Humanoid.MoveDirection)
+						placeblockthing(blockpos, getwool())
+					end)
+				end)
+				toggled = true
+			else
+				yestwo:Disconnect()
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LDIEA_fake_script)()
+local function ECSG_fake_script() -- inffly.Toggled 
+	local script = Instance.new('LocalScript', inffly)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(ECSG_fake_script)()
+local function VIVIRV_fake_script() -- highjump.Toggled 
+	local script = Instance.new('LocalScript', highjump)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(VIVIRV_fake_script)()
+local function AKRSTIU_fake_script() -- highjump.LocalScript 
+	local script = Instance.new('LocalScript', highjump)
+
+	local toggled = false
+	local lplr = game.Players.LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+			if toggled == false then
+					repeat task.wait()
+					lplr.Character.PrimaryPart.Velocity = Vector3.new(lplr.Character.PrimaryPart.Velocity.X,300,lplr.Character.PrimaryPart.Velocity.Z)
+					toggled = true
+			until not toggled
+		end
+	end)
+end
+coroutine.wrap(AKRSTIU_fake_script)()
+local function MTEQL_fake_script() -- longjump.Toggled 
+	local script = Instance.new('LocalScript', longjump)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(MTEQL_fake_script)()
+local function TZED_fake_script() -- longjump.LocalScript 
+	local script = Instance.new('LocalScript', longjump)
+
+	
+end
+coroutine.wrap(TZED_fake_script)()
+local function MXSHR_fake_script() -- fullbright.Toggled 
+	local script = Instance.new('LocalScript', fullbright)
+
+	local toggled = false
+	local text = script.Parent.TextColor
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(MXSHR_fake_script)()
+local function QQDNB_fake_script() -- fullbright.LocalScript 
+	local script = Instance.new('LocalScript', fullbright)
+
+	local Lighting = game:GetService("Lighting")
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			Lighting.Brightness = 3
+			toggled = true
+		else
+			Lighting.Brightness = 1
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(QQDNB_fake_script)()
+local function KJIYH_fake_script() -- esp.Toggled 
+	local script = Instance.new('LocalScript', esp)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(KJIYH_fake_script)()
+local function PRUFOA_fake_script() -- chams.Toggled 
+	local script = Instance.new('LocalScript', chams)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(PRUFOA_fake_script)()
+local function BUHM_fake_script() -- ambience.Toggled 
+	local script = Instance.new('LocalScript', ambience)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(BUHM_fake_script)()
+local function JBNOD_fake_script() -- ambience.LocalScript 
+	local script = Instance.new('LocalScript', ambience)
+
+	local lighting = game:GetService("Lighting")
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			lighting.Ambient = Color3.fromRGB(85, 170, 255)
+			toggled = true
+		else
+			lighting.Ambient = Color3.fromRGB(89, 60, 86)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(JBNOD_fake_script)()
+local function GILUVQ_fake_script() -- noshadows.Toggled 
+	local script = Instance.new('LocalScript', noshadows)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(GILUVQ_fake_script)()
+local function UQZFUQ_fake_script() -- noshadows.LocalScript 
+	local script = Instance.new('LocalScript', noshadows)
+
+	local lighting = game:GetService("Lighting")
+	local toggled = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			lighting.GlobalShadows = false
+			toggled = true
+		else
+			lighting.GlobalShadows = true
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(UQZFUQ_fake_script)()
+local function VLOMLS_fake_script() -- night.Toggled 
+	local script = Instance.new('LocalScript', night)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(VLOMLS_fake_script)()
+local function EZOE_fake_script() -- night.LocalScript 
+	local script = Instance.new('LocalScript', night)
+
+	local lighting = game:GetService("Lighting")
+	local toggled = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			lighting.TimeOfDay = 4
+			toggled = true
+		else
+			lighting.TimeOfDay = 14
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(EZOE_fake_script)()
+local function UZLHRFR_fake_script() -- autoreport.Toggled 
+	local script = Instance.new('LocalScript', autoreport)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(UZLHRFR_fake_script)()
+local function HFUYAGS_fake_script() -- nofall.Toggled 
+	local script = Instance.new('LocalScript', nofall)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(HFUYAGS_fake_script)()
+local function IORQ_fake_script() -- nofall.LocalScript 
+	local script = Instance.new('LocalScript', nofall)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		repeat task.wait(1)
+			game:GetService("ReplicatedStorage").rbxts_include.node_modules:FindFirstChild("@rbxts").net.out._NetManaged.GroundHit:FireServer()
+		until toggled == false
+	end)
+end
+coroutine.wrap(IORQ_fake_script)()
+local function RTSQVA_fake_script() -- carpetbed.Toggled 
+	local script = Instance.new('LocalScript', carpetbed)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(RTSQVA_fake_script)()
+local function DYZI_fake_script() -- carpetbed.LocalScript 
+	local script = Instance.new('LocalScript', carpetbed)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			for i,v in pairs(workspace.bed:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("BasePart") then
+					v.Material = Enum.Material.Fabric
+				end	
+			end
+			toggled = true
+		else
+			for i,v in pairs(workspace.bed:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("BasePart") then
+					v.Material = Enum.Material.SmoothPlastic
+					toggled = false
+				end
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(DYZI_fake_script)()
+local function IWDAOQ_fake_script() -- nonametag.Toggled 
+	local script = Instance.new('LocalScript', nonametag)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(IWDAOQ_fake_script)()
+local function BXQD_fake_script() -- nonametag.LocalScript 
+	local script = Instance.new('LocalScript', nonametag)
+
+	local toggled = false
+	local lplr = game.Players.LocalPlayer
+	local removeNameConnection
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	if toggled == false then
+		pcall(function() lplr.Character.Head.Nametag:Destroy() end)
+		removeNameConnection = lplr.CharacterAdded:Connect(function()
+			task.wait(1)
+				lplr.Character.Head.Nametag:Destroy()
+			end)
+			toggled = true
+	else
+			removeNameConnection:Disconnect()
+			toggled = false
+	end
+	end)
+end
+coroutine.wrap(BXQD_fake_script)()
+local function WEFXX_fake_script() -- nokillfeed.Toggled 
+	local script = Instance.new('LocalScript', nokillfeed)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(WEFXX_fake_script)()
+local function ZKPIEPD_fake_script() -- nokillfeed.LocalScript 
+	local script = Instance.new('LocalScript', nokillfeed)
+
+	local lplr = game.Players.LocalPlayer
+	local toggled = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			lplr.PlayerGui.KillFeedGui.Enabled = false
+			toggled = true
+		else
+			lplr.PlayerGui.KillFeedGui.Enabled = true
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(ZKPIEPD_fake_script)()
+local function WMZREA_fake_script() -- ignoreplaceregion.Toggled 
+	local script = Instance.new('LocalScript', ignoreplaceregion)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(WMZREA_fake_script)()
+local function UFNN_fake_script() -- ignoreplaceregion.LocalScript 
+	local script = Instance.new('LocalScript', ignoreplaceregion)
+
+	local lplr = game.Players.LocalPlayer
+	
+	local toggled = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			lplr.PlayerGui.ServerRegionDisplay.Enabled = false
+			toggled = true
+		else
+			lplr.PlayerGui.ServerRegionDisplay.Enabled = true
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(UFNN_fake_script)()
+local function KWIQPIN_fake_script() -- stealer.Toggled 
+	local script = Instance.new('LocalScript', stealer)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(KWIQPIN_fake_script)()
+local function LLVI_fake_script() -- stealer.LocalScript 
+	local script = Instance.new('LocalScript', stealer)
+
+	Utilities = {
+		Predict = function(player)
+			return player.Character.HumanoidRootPart.Position + (player.Character.HumanoidRootPart.Velocity * 0.075)
+		end,
+		GetNearbyPlayers = function(range,addself)
+			local nearby = {}
+			for _,Player in pairs(game:GetService("Players"):GetPlayers()) do
+				if Player.Character and Player.Character.PrimaryPart then
+					if (Player.Character.PrimaryPart.Position - game.Players.LocalPlayer.Character.PrimaryPart.Position).Magnitude <= range then
+						if Player.UserId == game.Players.LocalPlayer.UserId then
+							if addself == true then
+								table.insert(nearby,Player)
+							end
+						else
+							table.insert(nearby,Player)
+						end
+					end
+				end
+			end
+			return nearby
+		end,
+		IsAlive = function(Entity)
+			pcall(function()
+				if Entity and Entity.PrimaryPart and Entity:FindFirstChild("Humanoid") and Entity.Humanoid.Health > 0 then
+					return true
+				else
+					return false
+				end
+			end)
+			return false
+		end,
+		GetChests = function()
+			local chests = {}
+			for i,v in pairs(workspace:GetChildren()) do
+				if v.Name == "chest" then
+					table.insert(chests,v)
+				end
+			end
+			return chests
+		end,
+		GetCharacter = function()
+			return game.Players.LocalPlayer.Character
+		end,
+	}
+	
+	local Chests = Utilities.GetChests()
+	local toggled = false
+		script.Parent.MouseButton1Click:Connect(function()
+			if toggled then
+					repeat
+						task.wait(0.15)
+						task.spawn(function()
+							for i, v in pairs(Chests) do
+								local Magnitude = (v.Position - Utilities.GetCharacter().PrimaryPart.Position).Magnitude
+								if Magnitude <= 35 then
+									for _, item in pairs(v.ChestFolderValue.Value:GetChildren()) do
+										if item:IsA("Accessory") then
+											task.wait()
+											game:GetService("ReplicatedStorage"):WaitForChild("rbxts_include"):WaitForChild("node_modules"):FindFirstChild("@rbxts").net.out._NetManaged:FindFirstChild("Inventory:ChestGetItem"):InvokeServer(v.ChestFolderValue.Value, item)
+										end
+									end
+								end
+							end
+						end)
+			until not toggled
+		end
+	end)
+end
+coroutine.wrap(LLVI_fake_script)()
+local function ZQTWSI_fake_script() -- antivoid.Toggled 
+	local script = Instance.new('LocalScript', antivoid)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(ZQTWSI_fake_script)()
+local function GIGAW_fake_script() -- notextures.Toggled 
+	local script = Instance.new('LocalScript', notextures)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(GIGAW_fake_script)()
+local function NZZQIC_fake_script() -- notextures.LocalScript 
+	local script = Instance.new('LocalScript', notextures)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			toggled = true
+				for i,v in pairs(workspace.Map:GetDescendants()) do
+					if v:IsA("Part") or v:IsA("BasePart") then
+						v.Material = Enum.Material.SmoothPlastic
+				end
+				
+			end
+		else
+			for i,v in pairs(workspace.Map:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("BasePart") then
+					v.Material = Enum.Material.Fabric
+					toggled = false
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(NZZQIC_fake_script)()
+local function HNBGQ_fake_script() -- infjump.Toggled 
+	local script = Instance.new('LocalScript', infjump)
+
+	local toggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			script.Parent.BackgroundColor3 = Color3.new(0.333333, 0.666667, 1)
+			toggled = true
+		else
+			script.Parent.BackgroundColor3 = Color3.new(0.0941176, 0.0941176, 0.0941176)
+			toggled = false
+		end
+	end)
+end
+coroutine.wrap(HNBGQ_fake_script)()
+local function DDGOZPA_fake_script() -- infjump.LocalScript 
+	local script = Instance.new('LocalScript', infjump)
+
+	local toggled = false
+	local Player = game.Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggled == false then
+			repeat
+				_G.JumpHeight = 50;
+				local function Action(Object, Function) if Object ~= nil then Function(Object); end end
+				UIS.InputBegan:connect(function(UserInput)
+					if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+						Action(Player.Character.Humanoid, function(self)
+							if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+								Action(self.Parent.HumanoidRootPart, function(self)
+									self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+									toggled = true
+								end)
+							end
+						end)
+					end
+				end)
+	
+	
+			until toggled == false
+		end
+	end)
+end
+coroutine.wrap(DDGOZPA_fake_script)()
+local function DXND_fake_script() -- infyield.LocalScript 
+	local script = Instance.new('LocalScript', infyield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(DXND_fake_script)()
+local function RYCDIE_fake_script() -- NitrogenClient.OpenGui 
+	local script = Instance.new('LocalScript', NitrogenClient)
+
+	local UIS = game:GetService("UserInputService")
+	local toggle = false
+	
+	UIS.InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			if toggle then
+				script.Parent.Enabled = true
+				toggle = false
+			elseif not toggle then
+				script.Parent.Enabled = false
+				toggle = true
+			end
+		end
+	end)
+end
+coroutine.wrap(RYCDIE_fake_script)()
