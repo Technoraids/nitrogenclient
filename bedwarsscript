@@ -1,0 +1,149 @@
+-- Gui to Lua
+-- Version: 3.4
+
+-- Instances:
+
+local Keystrokes = Instance.new("ScreenGui")
+local W = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local A = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local S = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local D = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Space = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+
+--Properties:
+
+Keystrokes.Name = "Keystrokes"
+Keystrokes.Parent = game.CoreGui
+Keystrokes.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+W.Name = "W"
+W.Parent = Keystrokes
+W.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+W.Position = UDim2.new(0.0505735129, 0, 0.584788024, 0)
+W.Size = UDim2.new(0, 60, 0, 60)
+W.Font = Enum.Font.Nunito
+W.Text = "W"
+W.TextColor3 = Color3.fromRGB(255, 255, 255)
+W.TextSize = 40.000
+
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = W
+
+A.Name = "A"
+A.Parent = Keystrokes
+A.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+A.Position = UDim2.new(0.0156412926, 0, 0.668329179, 0)
+A.Size = UDim2.new(0, 60, 0, 60)
+A.Font = Enum.Font.Nunito
+A.Text = "A"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextSize = 40.000
+
+UICorner_2.CornerRadius = UDim.new(0, 16)
+UICorner_2.Parent = A
+
+S.Name = "S"
+S.Parent = Keystrokes
+S.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+S.Position = UDim2.new(0.0505735129, 0, 0.668329179, 0)
+S.Size = UDim2.new(0, 60, 0, 60)
+S.Font = Enum.Font.Nunito
+S.Text = "S"
+S.TextColor3 = Color3.fromRGB(255, 255, 255)
+S.TextSize = 40.000
+
+UICorner_3.CornerRadius = UDim.new(0, 16)
+UICorner_3.Parent = S
+
+D.Name = "D"
+D.Parent = Keystrokes
+D.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+D.Position = UDim2.new(0.0855057389, 0, 0.668329179, 0)
+D.Size = UDim2.new(0, 60, 0, 60)
+D.Font = Enum.Font.Nunito
+D.Text = "D"
+D.TextColor3 = Color3.fromRGB(255, 255, 255)
+D.TextSize = 40.000
+
+UICorner_4.CornerRadius = UDim.new(0, 16)
+UICorner_4.Parent = D
+
+Space.Name = "Space"
+Space.Parent = Keystrokes
+Space.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+Space.Position = UDim2.new(0.0156412926, 0, 0.750623465, 0)
+Space.Size = UDim2.new(0, 195, 0, 45)
+Space.Font = Enum.Font.Gotham
+Space.Text = ""
+Space.TextColor3 = Color3.fromRGB(255, 255, 255)
+Space.TextSize = 40.000
+Space.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_5.CornerRadius = UDim.new(0, 16)
+UICorner_5.Parent = Space
+
+Frame.Parent = Space
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.061538469, 0, 0.466666669, 0)
+Frame.Size = UDim2.new(0, 170, 0, 2)
+
+-- Scripts:
+
+local function AAHVU_fake_script() -- Keystrokes.KeystrokesHandler 
+	local script = Instance.new('LocalScript', Keystrokes)
+
+	local W = script.Parent.W
+	local A = script.Parent.A
+	local S = script.Parent.S
+	local D = script.Parent.D
+	local Space = script.Parent.Space
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(key,on)
+		if not on then
+			if key.KeyCode == Enum.KeyCode.W then
+				W.BackgroundColor3 = Color3.fromRGB(54, 108, 162)
+				end
+			if key.KeyCode == Enum.KeyCode.A then
+				A.BackgroundColor3 = Color3.fromRGB(54, 108, 162)
+				end
+			if key.KeyCode == Enum.KeyCode.S then
+				S.BackgroundColor3 = Color3.fromRGB(54, 108, 162)
+				end
+			if key.KeyCode == Enum.KeyCode.D then
+				D.BackgroundColor3 = Color3.fromRGB(54, 108, 162)
+				end
+			if key.KeyCode == Enum.KeyCode.Space then
+				Space.BackgroundColor3 = Color3.fromRGB(54, 108, 162)
+			end
+			end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(key2,on2)
+		if not on2 then
+			if key2.KeyCode == Enum.KeyCode.W then
+				W.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+			end
+			if key2.KeyCode == Enum.KeyCode.A then
+				A.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+			end
+			if key2.KeyCode == Enum.KeyCode.S then
+				S.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+			end
+			if key2.KeyCode == Enum.KeyCode.D then
+				D.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+			end
+			if key2.KeyCode == Enum.KeyCode.Space then
+				Space.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+			end
+		end
+	end)
+end
+coroutine.wrap(AAHVU_fake_script)()
