@@ -1,0 +1,41 @@
+-- Gui to Lua
+-- Version: 3.4
+
+-- Instances:
+
+local Watermark = Instance.new("ScreenGui")
+local nitrogen = Instance.new("TextLabel")
+local client = Instance.new("TextLabel")
+
+--Properties:
+
+Watermark.Name = "Watermark"
+Watermark.Parent = game.CoreGui
+Watermark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+nitrogen.Name = "nitrogen"
+nitrogen.Parent = Watermark
+nitrogen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nitrogen.BackgroundTransparency = 1.000
+nitrogen.Position = UDim2.new(0.00573514076, 0, 0.0206185561, 0)
+nitrogen.Size = UDim2.new(0, 200, 0, 50)
+nitrogen.Font = Enum.Font.SourceSansBold
+nitrogen.Text = "nitrogen"
+nitrogen.TextColor3 = Color3.fromRGB(85, 170, 255)
+nitrogen.TextScaled = true
+nitrogen.TextSize = 14.000
+nitrogen.TextWrapped = true
+
+client.Name = "client"
+client.Parent = Watermark
+client.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+client.BackgroundTransparency = 1.000
+client.Position = UDim2.new(0.0187695511, 0, 0.0618556701, 0)
+client.Size = UDim2.new(0, 205, 0, 25)
+client.Font = Enum.Font.SourceSansBold
+client.Text = "client"
+client.TextColor3 = Color3.fromRGB(85, 170, 255)
+client.TextScaled = true
+client.TextSize = 14.000
+client.TextWrapped = true
+client.TextXAlignment = Enum.TextXAlignment.Left
