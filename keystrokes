@@ -24,8 +24,9 @@ Keystrokes.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 W.Name = "W"
 W.Parent = Keystrokes
+W.AnchorPoint = Vector2.new(0.5, 0.5)
 W.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
-W.Position = UDim2.new(0.066, 0,0.629, 0)
+W.Position = UDim2.new(0.0662148073, 0, 0.622934341, 0)
 W.Size = UDim2.new(0, 60, 0, 60)
 W.Font = Enum.Font.Nunito
 W.Text = "W"
@@ -37,8 +38,9 @@ UICorner.Parent = W
 
 A.Name = "A"
 A.Parent = Keystrokes
+A.AnchorPoint = Vector2.new(0.5, 0.5)
 A.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
-A.Position = UDim2.new(0.031, 0,0.706, 0)
+A.Position = UDim2.new(0.0312825851, 0, 0.705735683, 0)
 A.Size = UDim2.new(0, 60, 0, 60)
 A.Font = Enum.Font.Nunito
 A.Text = "A"
@@ -50,8 +52,9 @@ UICorner_2.Parent = A
 
 S.Name = "S"
 S.Parent = Keystrokes
+S.AnchorPoint = Vector2.new(0.5, 0.5)
 S.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
-S.Position = UDim2.new(0.066, 0,0.706, 0)
+S.Position = UDim2.new(0.0662148073, 0, 0.705735683, 0)
 S.Size = UDim2.new(0, 60, 0, 60)
 S.Font = Enum.Font.Nunito
 S.Text = "S"
@@ -63,8 +66,9 @@ UICorner_3.Parent = S
 
 D.Name = "D"
 D.Parent = Keystrokes
+D.AnchorPoint = Vector2.new(0.5, 0.5)
 D.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
-D.Position = UDim2.new(0.102, 0,0.706, 0)
+D.Position = UDim2.new(0.10166841, 0, 0.705735683, 0)
 D.Size = UDim2.new(0, 60, 0, 60)
 D.Font = Enum.Font.Nunito
 D.Text = "D"
@@ -76,8 +80,9 @@ UICorner_4.Parent = D
 
 Space.Name = "Space"
 Space.Parent = Keystrokes
+Space.AnchorPoint = Vector2.new(0.5, 0.5)
 Space.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
-Space.Position = UDim2.new(0.066, 0,0.774, 0)
+Space.Position = UDim2.new(0.0662148073, 0, 0.779910147, 0)
 Space.Size = UDim2.new(0, 195, 0, 45)
 Space.Font = Enum.Font.Gotham
 Space.Text = ""
@@ -96,7 +101,7 @@ Frame.Size = UDim2.new(0, 170, 0, 2)
 
 -- Scripts:
 
-local function AAHVU_fake_script() -- Keystrokes.KeystrokesHandler 
+local function PGTKI_fake_script() -- Keystrokes.KeystrokesHandler 
 	local script = Instance.new('LocalScript', Keystrokes)
 
 	local W = script.Parent.W
@@ -146,4 +151,4 @@ local function AAHVU_fake_script() -- Keystrokes.KeystrokesHandler
 		end
 	end)
 end
-coroutine.wrap(AAHVU_fake_script)()
+coroutine.wrap(PGTKI_fake_script)()
