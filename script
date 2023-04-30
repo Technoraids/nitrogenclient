@@ -1,2 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/nitrogenclient"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/keystrokes"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/nitrogenclient",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/keystrokes",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Technoraids/nitrogenclient/main/watermark",true))()
